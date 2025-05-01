@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Negócio na 1ª Página do Google em 30 Dias - Garantido!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Reset e Estilos Globais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            padding: 60px 0;
+        }
+        
+        h1, h2, h3, h4 {
+            margin-bottom: 20px;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+            margin: 10px 5px;
+        }
+        
+        .btn-primary {
+            background-color: #FFD700;
+            color: #333;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+        }
+        
+        .btn-primary:hover {
+            background-color: #FFC000;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6);
+        }
+        
+        .btn-secondary {
+            background-color: #25D366;
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #1DA851;
+            transform: translateY(-3px);
+        }
+        
+        .btn-tertiary {
+            background-color: #4285F4;
+            color: white;
+        }
+        
+        .btn-tertiary:hover {
+            background-color: #3367D6;
+            transform: translateY(-3px);
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        .badge-guarantee {
+            background-color: rgba(255, 215, 0, 0.2);
+            color: #B8860B;
+            border: 1px solid #FFD700;
+        }
+        
+        /* Hero Section */
+        #hero {
+            background: linear-gradient(135deg, #1a73e8 0%, #4285f4 100%);
+            color: white;
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        #hero .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        #hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        #hero p.subtitle {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        .hero-image {
+            max-width: 300px;
+            margin: 30px auto;
+            position: relative;
+        }
+        
+        .hero-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .floating-badge {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            background-color: white;
+            color: #1a73e8;
+            padding: 10px 15px;
+            border-radius: 50px;
+            font-weight: 700;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .testimonial {
+            font-style: italic;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            border-left: 3px solid #FFD700;
+        }
+        
+        /* Problem Section */
+        #problem {
+            background-color: white;
+        }
+        
+        #problem h2 {
+            color: #d32f2f;
+            text-align: center;
+            font-size: 2rem;
+        }
+        
+        #problem .subtitle {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #666;
+        }
+        
+        .problem-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 40px 0;
+        }
+        
+        .problem-item {
+            flex: 0 0 30%;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f5f5f5;
+        }
+        
+        .problem-icon {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        
+        .problem-icon.bad {
+            color: #d32f2f;
+        }
+        
+        .problem-icon.good {
+            color: #388e3c;
+        }
+        
+        .before-after {
+            max-width: 800px;
+            margin: 40px auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .before, .after {
+            width: 48%;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .before {
+            background-color: #ffebee;
+            border: 1px solid #ef9a9a;
+        }
+        
+        .after {
+            background-color: #e8f5e9;
+            border: 1px solid #a5d6a7;
+        }
+        
+        /* Solution Section */
+        #solution {
+            background-color: #f1f8fe;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .benefit-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .benefit-icon {
+            font-size: 2.5rem;
+            color: #1a73e8;
+            margin-bottom: 20px;
+        }
+        
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .trust-badge {
+            padding: 10px 20px;
+            background-color: white;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .trust-badge i {
+            margin-right: 10px;
+            color: #1a73e8;
+        }
+        
+        /* Offer Section */
+        #offer {
+            background-color: white;
+        }
+        
+        .pricing-table {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .pricing-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .pricing-header {
+            padding: 20px;
+            text-align: center;
+            background-color: #f1f8fe;
+        }
+        
+        .pricing-card.recommended .pricing-header {
+            background-color: #1a73e8;
+            color: white;
+        }
+        
+        .pricing-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+        
+        .pricing-features {
+            padding: 20px;
+        }
+        
+        .pricing-features ul {
+            list-style: none;
+        }
+        
+        .pricing-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .pricing-features li:before {
+            content: "✓";
+            color: #388e3c;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        
+        .pricing-footer {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .countdown {
+            background-color: #ffebee;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 30px auto;
+            max-width: 500px;
+            font-weight: 700;
+        }
+        
+        /* FAQ Section */
+        #faq {
+            background-color: #f1f8fe;
+        }
+        
+        .accordion {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .accordion-item {
+            margin-bottom: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .accordion-header {
+            padding: 15px 20px;
+            background-color: #1a73e8;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .accordion-content {
+            padding: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background-color: white;
+        }
+        
+        .accordion-content-inner {
+            padding: 20px;
+        }
+        
+        .accordion-item.active .accordion-content {
+            max-height: 500px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 60px 0 20px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h4 {
+            color: #FFD700;
+            margin-bottom: 20px;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column a:hover {
+            color: #FFD700;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: #FFD700;
+        }
+        
+        .security-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
+            align-items: center;
+        }
+        
+        .security-badge {
+            display: flex;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        
+        .security-badge i {
+            margin-right: 5px;
+            color: #FFD700;
+        }
+        
+        .contact-methods {
+            margin: 20px 0;
+        }
+        
+        .contact-method {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .contact-method i {
+            margin-right: 10px;
+            color: #FFD700;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            margin-top: 40px;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            section {
+                padding: 40px 0;
+            }
+            
+            #hero h1 {
+                font-size: 2rem;
+            }
+            
+            .problem-item {
+                flex: 0 0 100%;
+            }
+            
+            .before-after {
+                flex-direction: column;
+            }
+            
+            .before, .after {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            
+            .pricing-table {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="text-center">
+                <span class="badge badge-guarantee">GARANTIA DE 30 DIAS OU SEU DINHEIRO DE VOLTA</span>
+                <h1>Seu Negócio Está Invisível no Google? <br> Apareça na 1ª Página em até 30 Dias — ou Devolvemos Seu Dinheiro!</h1>
+                <p class="subtitle">92% dos nossos clientes dobram as buscas locais em apenas 1 mês. Sem termos técnicos complicados — entregamos resultados reais para seu negócio atrair mais clientes e vender mais!</p>
+                <a href="#offer" class="btn btn-primary">QUERO APARECER NO TOPO AGORA →</a>
+            </div>
+            
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/300x500" alt="Perfil otimizado no Google Meu Negócio">
+                <div class="floating-badge">TOP 3 ★★★★★</div>
+            </div>
+            
+            <div class="testimonial text-center">
+                "Depois da otimização, meu salão apareceu em 1º lugar para 'cabeleireiro perto de mim' e as ligações aumentaram 150%!"<br>
+                <strong>Ana Lúcia, Dono de Salão – Vitória da Conquista/BA</strong>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Problem Section -->
+    <section id="problem">
+        <div class="container">
+            <h2 class="text-center">Seu Google Meu Negócio Está Cometendo Esses 3 Erros Fatais?</h2>
+            <p class="subtitle">Esses deslizes fazem clientes passarem direto pelo seu negócio — mesmo você estando lá!</p>
+            
+            <div class="problem-list">
+                <div class="problem-item">
+                    <div class="problem-icon bad">🚫</div>
+                    <h3>Perfil Incompleto ou Desatualizado</h3>
+                    <p>Horários errados? Fotos de 2018? O Google PENALIZA seu negócio por informações inconsistentes!</p>
+                    <p><strong>Exemplo:</strong> Um restaurante aparece como "aberto" no Google, mas está fechado — cliente chega no local e desiste.</p>
+                    <div class="problem-icon good" style="margin-top: 15px;">✔️</div>
+                </div>
+                
+                <div class="problem-item">
+                    <div class="problem-icon bad">🔍</div>
+                    <h3>SEO Local Inexistente</h3>
+                    <p>Você não aparece em buscas como 'encanador em sua cidade'? Isso é dinheiro indo para o concorrente!</p>
+                    <p><strong>Dado chocante:</strong> 64% dos usuários clicam nos 3 primeiros resultados do Google Maps — se você não está lá, é como se não existisse.</p>
+                    <div class="problem-icon good" style="margin-top: 15px;">✔️</div>
+                </div>
+                
+                <div class="problem-item">
+                    <div class="problem-icon bad">😡</div>
+                    <h3>Avaliações Ignoradas ou Respostas Robóticas</h3>
+                    <p>Clientes desistem de ir até você ao ver respostas genéricas ou nenhum feedback no seu perfil. Isso DESTRÓI sua reputação online!</p>
+                    <p><strong>Cenário comum:</strong> Um cliente deixa uma crítica sobre "atendimento demorado" e recebe um "Obrigado pelo contato!" sem solução.</p>
+                    <div class="problem-icon good" style="margin-top: 15px;">✔️</div>
+                </div>
+            </div>
+            
+            <div class="before-after">
+                <div class="before">
+                    <h4>ERROS:</h4>
+                    <ul>
+                        <li>Foto desfocada</li>
+                        <li>Descrição vazia</li>
+                        <li>Sem horários</li>
+                        <li>Avaliações sem resposta</li>
+                    </ul>
+                </div>
+                <div class="after">
+                    <h4>SOLUÇÕES:</h4>
+                    <ul>
+                        <li>Fotos profissionais</li>
+                        <li>Descrição estratégica</li>
+                        <li>Selo "TOP 3"</li>
+                        <li>Respostas personalizadas</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <p><strong>Se você se identificou com PELO MENOS UM desses problemas, seu negócio está perdendo clientes todos os dias. Mas há solução!</strong></p>
+                <a href="#solution" class="btn btn-tertiary">QUERO CORRIGIR ESSES ERROS →</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Solution Section -->
+    <section id="solution">
+        <div class="container">
+            <h2 class="text-center">Transformamos seu Google Meu Negócio em uma Máquina de Gerar Clientes 24h!</h2>
+            <p class="subtitle text-center">Não é 'mágica' — é estratégia comprovada para negócios locais como o seu.</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">📅</div>
+                    <h3>Resultados Rápidos e Mensuráveis</h3>
+                    <p>Relatórios mensais com métricas de crescimento: visualizações, chamadas e rotas geradas.</p>
+                    <p><strong>Exemplo:</strong> "O Ricardo (oficina mecânica) saltou de 20 para 55 chamadas/mês após otimização."</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>Personalização para Seu Nicho</h3>
+                    <p>Pacotes para pequenas, médias e grandes empresas — do cadastro à gestão contínua.</p>
+                    <p><strong>Destaque:</strong> "Configuramos seu perfil com palavras-chave do seu mercado (ex.: 'clínica dentária barata em [Sua Cidade]')."</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">💡</div>
+                    <h3>Case Real</h3>
+                    <p>"O Henrique (barbearia) aumentou 200% nas buscas em 2 meses e lotou a agenda!"</p>
+                    <p><em>"Antes, meu salão não aparecia nem no mapa. Hoje, 7 em cada 10 clientes vêm do Google!"</em><br>
+                    <strong>— Igor Souza, dono da barbearia Style Man</strong></p>
+                </div>
+            </div>
+            
+            <div class="trust-badges">
+                <div class="trust-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>30 Dias ou Seu Dinheiro de Volta — Sem Burocracia</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fab fa-google"></i>
+                    <span>Parceiro Google</span>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="https://wa.me/5511999999999" class="btn btn-secondary">
+                    <i class="fab fa-whatsapp"></i> Fale Direto com um Especialista
+                </a>
+                <p>Clique aqui para tirar dúvidas AGORA!</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Offer Section -->
+    <section id="offer">
+        <div class="container">
+            <h2 class="text-center">Vagas Limitadas para Otimização em <span id="current-month"></span>!</h2>
+            <p class="subtitle text-center">Só trabalhamos com 10 clientes por mês para garantir resultados EXCEPCIONAIS!</p>
+            
+            <div class="countdown">
+                Vagas preenchendo rápido: 7/10 já ocupadas!
+            </div>
+            
+            <h3 class="text-center">O Que Você Recebe no Pacote:</h3>
+            <ul style="max-width: 700px; margin: 20px auto;">
+                <li><strong>✔ Cadastro Completo + Verificação do Perfil</strong> (Nunca mais apareça como "não verificado" no Google!)</li>
+                <li><strong>✔ SEO Local Avançado (Top 3 no Google Maps)</strong> (Posicionamos seu negócio para buscas como "pizzaria delivery em [sua cidade]")</li>
+                <li><strong>✔ Gestão Profissional de Avaliações</strong> (Respostas personalizadas para cada cliente - sem template robótico!)</li>
+                <li><strong>✔ Relatório Mensal de Performance</strong> (Acompanhe seu crescimento: visualizações, chamadas, rotas geradas e mais!)</li>
+                <li><strong>✔ Bônus Exclusivo:</strong> Guia "Como Manter Seu GMB Otimizado" (PDF)</li>
+            </ul>
+            
+            <div class="trust-badge" style="max-width: 400px; margin: 30px auto; text-align: center;">
+                <i class="fas fa-check-circle" style="color: #388e3c; font-size: 2rem;"></i>
+                <h3>30 DIAS OU SEU DINHEIRO DE VOLTA</h3>
+                <p>Se em 1 mês seu perfil não melhorar, devolvemos 100% do investimento!</p>
+            </div>
+            
+            <h3 class="text-center">Escolha o Plano Ideal para Seu Negócio:</h3>
+            
+            <div class="pricing-table">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h4>Plano Básico</h4>
+                    </div>
+                    <div class="pricing-price">R$ 197/mês</div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>Cadastro + SEO básico</li>
+                            <li>1 revisão mensal</li>
+                            <li>Suporte por e-mail</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <p>Para quem está começando</p>
+                        <a href="#offer" class="btn btn-tertiary">ESCOLHER ESTE</a>
+                    </div>
+                </div>
+                
+                <div class="pricing-card recommended">
+                    <div class="pricing-header">
+                        <h4>Plano Recomendado</h4>
+                    </div>
+                    <div class="pricing-price">R$ 397/mês</div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>Plano Básico + Gestão de 10 avaliações/mês</li>
+                            <li>2 revisões mensais</li>
+                            <li>Suporte prioritário</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <p>Melhor custo-benefício</p>
+                        <a href="#offer" class="btn btn-primary">ESCOLHER ESTE</a>
+                    </div>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h4>Plano Premium</h4>
+                    </div>
+                    <div class="pricing-price">R$ 597/mês</div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>Plano Recomendado + Relatório SEMANAL</li>
+                            <li>Gestão ilimitada de avaliações</li>
+                            <li>Suporte prioritário 24h</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <p>Para quem quer resultados AGORA</p>
+                        <a href="#offer" class="btn btn-tertiary">ESCOLHER ESTE</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="#offer" class="btn btn-primary" style="animation: pulse 2s infinite;">GARANTIR MINHA VAGA AGORA →</a>
+                <p>Últimas 3 vagas disponíveis para <span id="current-month2"></span></p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="container">
+            <h2 class="text-center">Perguntas Frequentes (Tire Todas as Suas Dúvidas)</h2>
+            
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Quanto tempo leva para ver resultados?</span>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p><strong>A maioria dos clientes percebe aumento nas buscas em 15-30 dias.</strong> Mas garantimos resultados em 30 dias ou devolvemos seu dinheiro! Caso real: Oficina do Junior teve 40% mais chamadas em 3 semanas.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Preciso ter conhecimento técnico?</span>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p><strong>Nada!</strong> Fazemos TUDO para você. Só precisamos de acesso básico ao seu GMB (te ensinamos em 2 minutos) e informações do seu negócio (horários, fotos, serviços).</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Vocês trabalham com qualquer nicho?</span>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p><strong>Sim!</strong> Otimizamos desde pizzarias até clínicas médicas. Cada nicho exige estratégias diferentes (ex.: um restaurante precisa de fotos de pratos, já uma mecânica precisa de palavras como 'conserto rápido').</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>E se meu negócio for novo/sem avaliações?</span>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p><strong>Ótima pergunta!</strong> Perfis novos são nossa especialidade. Criamos bases sólidas (fotos profissionais, descrição rica em SEO) e aceleramos sua autoridade no Google.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>O que acontece após os 30 dias?</span>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p>Oferecemos manutenção mensal (opcional) com atualizações, relatórios e gestão de avaliações. <strong>Mas o trabalho principal fica feito</strong> — seu perfil continuará otimizado!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Posso cancelar quando quiser?</span>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p><strong>Sim!</strong> Sem multas ou pegadinhas. Se quiser apenas a otimização inicial, sem manutenção, pode cancelar a qualquer momento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: 40px;">
+                <p>Ainda com dúvidas? Fale diretamente com nosso especialista!</p>
+                <a href="https://wa.me/5511999999999" class="btn btn-secondary">CHAMAR NO WHATSAPP</a>
+                <a href="#offer" class="btn btn-tertiary">AGENDAR CONSULTA GRATUITA</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Sobre Nós</h4>
+                    <ul>
+                        <li><a href="#">Quem Somos</a></li>
+                        <li><a href="#">Cases de Sucesso</a></li>
+                        <li><a href="#">Depoimentos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#">Otimização GMB</a></li>
+                        <li><a href="#">SEO Local</a></li>
+                        <li><a href="#">Gestão de Avaliações</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Jurídico</h4>
+                    <ul>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Garantia 30 Dias</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    
+                    <h4 style="margin-top: 20px;">Selo de Segurança</h4>
+                    <div class="security-badges">
+                        <div class="security-badge">
+                            <i class="fas fa-lock"></i>
+                            <span>Site Seguro</span>
+                        </div>
+                        <div class="security-badge">
+                            <i class="fab fa-google"></i>
+                            <span>Parceiro Google</span>
+                        </div>
+                        <div class="security-badge">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Pagamento Seguro</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contato Rápido</h4>
+                    <p>Precisa de ajuda agora?</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>(11) 99999-9999</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <span>(11) 9999-9999</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>contato@seudominio.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© <span id="current-year"></span> [Nome da Empresa]. Todos os direitos reservados.</p>
+                <p>Transformamos negócios locais em líderes do Google Meu Negócio. Venda mais, apareça mais!</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Script para o accordion
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+                const isActive = item.classList.contains('active');
+                
+                // Fecha todos os itens primeiro
+                document.querySelectorAll('.accordion-item').forEach(i => {
+                    i.classList.remove('active');
+                    i.querySelector('.accordion-header i').className = 'fas fa-plus';
+                });
+                
+                // Se não estava ativo, abre este
+                if (!isActive) {
+                    item.classList.add('active');
+                    header.querySelector('i').className = 'fas fa-minus';
+                }
+            });
+        });
+        
+        // Atualiza o mês e ano atual
+        const months = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+        const now = new Date();
+        document.getElementById('current-month').textContent = months[now.getMonth()];
+        document.getElementById('current-month2').textContent = months[now.getMonth()];
+        document.getElementById('current-year').textContent = now.getFullYear();
+        
+        // Animação de pulso para o botão principal
+        const style = document.createElement('style');
+        style.innerHTML = `
+            @keyframes pulse {
+                0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); }
+                70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(255, 215, 0, 0); }
+                100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
