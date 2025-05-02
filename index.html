@@ -320,9 +320,14 @@
             background-color: #f1f8fe;
         }
         
-        .pricing-card:nth-child(3) .pricing-header {
-    background: linear-gradient(135deg, #6a3093 0%, #a044ff 100%);
-    color: white;
+        .pricing-card.recommended .pricing-header {
+            background-color: #1a73e8; /* Azul para o plano recomendado */
+            color: white;
+        }
+        
+        .pricing-card.premium .pricing-header {
+            background-color: #6a1b9a; /* Roxo para o plano premium */
+            color: white;
         }
         
         .pricing-price {
@@ -387,7 +392,7 @@
         
         .accordion-header {
             padding: 15px 20px;
-            background-color: ##211ae8;
+            background-color: #1a73e8;
             color: white;
             font-weight: 600;
             cursor: pointer;
@@ -734,7 +739,7 @@
                     </div>
                 </div>
                 
-                <div class="pricing-card">
+                <div class="pricing-card premium">
                     <div class="pricing-header">
                         <h4>Plano Premium</h4>
                     </div>
